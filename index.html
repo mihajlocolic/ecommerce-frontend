@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce App</title>
+    <link rel="stylesheet" type="text/css" href="./styles/layout.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">
+            <a href="./index.html">E-Commerce App</a>
+        </div>
+        <div class="nav-links">
+            <div class="nav-search">
+                <input id="searchProduct" class="productSearch" type="search" placeholder="Search product">
+            </div>
+            <div id="nav-dropdown">
+                Categories
+                <div id="category-dropdown"></div>
+            </div>
+            <div class="nav-cart" id="cart">
+                Cart
+            </div>
+        </div>
+    </nav>
+    <main>   
+        <div class="main-container" id="main-container">
+            <div id="products"></div>
+        </div>
+    </main>
+    <script src="./scripts/DisplayProducts.js"></script>
+    <script src="./scripts/DisplayCart.js"></script>
+    <script src="./scripts/FetchProducts.js"></script>
+    <script src="./scripts/FetchCategories.js"></script>
+    <script src="./scripts/SearchProducts.js"></script>
+</body>
+</html>

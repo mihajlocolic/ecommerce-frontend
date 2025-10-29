@@ -169,7 +169,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    flex-direction: column;
+    padding: 15px;
     width: 250px;
 }
 
@@ -177,6 +178,22 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
+}
+
+.remove-item {
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(76, 119, 159);
+    
+}
+
+.remove-item:hover {
+    transition: background-color;
+    transition-duration: 0.2s;
+    background-color: rgb(88, 138, 184);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }

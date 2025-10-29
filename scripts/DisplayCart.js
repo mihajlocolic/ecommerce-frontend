@@ -1,23 +1,51 @@
-
 const cartElement = document.getElementById("cart");
 const mainContainer = document.getElementById("main-container");
+const cartItems = document.createElement("div");
+const totalPrice = document.createElement("p");
+
+
 
 cartElement.addEventListener("click", (e) => {
     e.preventDefault();
     mainContainer.innerHTML = "";
 
+    displayCart();
+});
+
+
+ function removeFromCart(product, cartItem) {
+    const index = productsInCart.indexOf(product);
+
+    if(index > -1) {
+        productsInCart.splice(index, 1);
+    }
+
+    // cartItems.removeChild(cartItem);
+    displayCart();
+    
+
+    if(productsInCart.length < 1) {
+        mainContainer.innerHTML = "There are no products in cart.";
+    }
+}
+
+
+function displayCart() {
+
+    document.getElementById("cart").innerHTML = (productsInCart.length > 0) ? `Cart (${productsInCart.length})` : "Cart";
+    
     if(productsInCart.length < 1) {
         mainContainer.innerHTML = "There are no products in cart.";
         return;
     }
 
-    const cartItems = document.createElement("div");
+    
     cartItems.className = "cart-items";
     cartItems.innerHTML = "Cart items:";
     mainContainer.appendChild(cartItems);
 
     let total = 0.0;
-
+    
     productsInCart.forEach((product) => {
         const price = parseFloat(product.dataset.price);
         const cartItem = document.createElement("div");
@@ -26,9 +54,35 @@ cartElement.addEventListener("click", (e) => {
         <p>${product.dataset.productId} - ${product.dataset.productName} $${price}</p>` 
         cartItems.appendChild(cartItem);
         total += price;
+
+        const removeButton = document.createElement("div");
+        removeButton.className = "remove-item";
+        removeButton.innerHTML = "Remove";
+
+        cartItem.appendChild(removeButton);
+
+        removeButton.addEventListener("click", () => {
+            removeFromCart(product, cartItem);
+        });
     });
 
-    cartItems.append(`Total: $${total}`);
-});
+    
+
+    totalPrice.className = "total-price";
+    totalPrice.innerHTML = `Total: $${total}`;
+    cartItems.append(totalPrice);
+
+
+    const clearCart = document.createElement("button");
+    clearCart.className = "clear-btn";
+    clearCart.textContent = "Clear Cart";
+
+    clearCart.addEventListener("click", () => {
+        productsInCart = [];
+        displayCart();
+    });
+
+    cartItems.appendChild(clearCart);
+}
 
 

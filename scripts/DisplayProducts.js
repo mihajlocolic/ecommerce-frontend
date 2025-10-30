@@ -1,5 +1,3 @@
-let productsInCart = [];
-
 document.addEventListener("load", () => {
     productsInCart.forEach(product, () => {
         productsInCart.pop(product);
@@ -14,20 +12,20 @@ function displayProducts(products) {
         parentElement.innerHTML = "<p>There's no available products for this category.</p>";
         return;
     }
-    products.forEach(product => {
-        // console.log(product);
+    products.forEach((product) => {
+        console.log(product);
         const childElement = document.createElement("div");
         childElement.innerHTML = `
-        <h3>${product.name}</h3> 
-        <p>${product.description}</p>
-        <p>$${product.price}</p>
-        <button id="addToCart" class="button">Add to cart</button>`;
-        parentElement.appendChild(childElement);
+            <h3>${product.name}</h3> 
+            <p>${product.description}</p>
+            <p>$${product.price}</p>
+            <button id="addToCart" class="button">Add to cart</button>`;
         childElement.className = "product-card";
         childElement.dataset.productId = product.id;
         childElement.dataset.productName = product.name;
         childElement.dataset.categoryId = product.categoryId;
         childElement.dataset.price = product.price;
+        parentElement.appendChild(childElement);
 
 
         const addButton = childElement.querySelector("#addToCart");

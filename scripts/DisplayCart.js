@@ -2,6 +2,7 @@ const cartElement = document.getElementById("cart");
 const mainContainer = document.getElementById("main-container");
 const cartItems = document.createElement("div");
 const totalPrice = document.createElement("p");
+let productsInCart = [];
 
 
 
@@ -83,6 +84,22 @@ function displayCart() {
     });
 
     cartItems.appendChild(clearCart);
+
+    const continueShoppingBtn = document.createElement("button");
+    continueShoppingBtn.className = "continueShoppingBtn";
+    continueShoppingBtn.textContent = "Continue Shopping";
+
+    continueShoppingBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        mainContainer.innerHTML = "";
+        const productsElement = document.createElement("div");
+        productsElement.id = "products";
+        mainContainer.appendChild(productsElement);
+        fetchProducts();
+    });
+
+    cartItems.appendChild(continueShoppingBtn);
 }
 
 

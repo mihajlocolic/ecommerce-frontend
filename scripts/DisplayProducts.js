@@ -19,7 +19,7 @@ function displayProducts(products) {
             <h3>${product.name}</h3> 
             <p>${product.description}</p>
             <p>$${product.price}</p>
-            <button id="addToCart" class="button">Add to cart</button>`;
+            <button id="addToCart" class="btn btn-primary button">Add to cart</button>`;
         childElement.className = "product-card";
         childElement.dataset.productId = product.id;
         childElement.dataset.productName = product.name;

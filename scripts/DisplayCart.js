@@ -56,8 +56,8 @@ function displayCart() {
         cartItems.appendChild(cartItem);
         total += price;
 
-        const removeButton = document.createElement("div");
-        removeButton.className = "remove-item";
+        const removeButton = document.createElement("button");
+        removeButton.className = "btn btn-secondary remove-item";
         removeButton.innerHTML = "Remove";
 
         cartItem.appendChild(removeButton);
@@ -74,8 +74,8 @@ function displayCart() {
     cartItems.append(totalPrice);
 
 
-    const clearCart = document.createElement("button");
-    clearCart.className = "clear-btn";
+    const clearCart = document.createElement("button"); 
+    clearCart.className = "btn btn-outline-dark clear-btn";
     clearCart.textContent = "Clear Cart";
 
     clearCart.addEventListener("click", () => {
@@ -86,7 +86,7 @@ function displayCart() {
     cartItems.appendChild(clearCart);
 
     const continueShoppingBtn = document.createElement("button");
-    continueShoppingBtn.className = "continueShoppingBtn";
+    continueShoppingBtn.className = "btn btn-outline-dark continueShoppingBtn";
     continueShoppingBtn.textContent = "Continue Shopping";
 
     continueShoppingBtn.addEventListener("click", (e) => {

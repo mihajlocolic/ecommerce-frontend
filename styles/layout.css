@@ -42,6 +42,10 @@ nav {
     flex-direction: row;
     align-items: center;
     gap: 0.3rem;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .nav-link {
@@ -148,18 +152,6 @@ main {
     padding: 10px;
 }
 
-#addToCart {
-    background-color: rgb(33, 129, 171);
-    color: whitesmoke;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-#addToCart:hover {
-    background-color: rgb(42, 162, 214);
-}
-
 .cart-item {
     background-color: rgb(229, 237, 243);
     border: 1px solid rgb(93, 93, 104);
@@ -170,7 +162,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 15px;
+    padding: 3rem;
     width: 250px;
 }
 

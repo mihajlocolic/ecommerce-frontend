@@ -12,7 +12,7 @@ function filterProducts(categoryId) {
     });
 }
 
-fetch("http://localhost:5259/api/category").then((res) => {
+fetch("https://ecommerce-api20251105080905-b7c5d8gbazahhhdw.canadacentral-01.azurewebsites.net/api/category").then((res) => {
     if(!res.ok) {
         throw new Error(`HTTP ERROR: ${res.status}`);
     }

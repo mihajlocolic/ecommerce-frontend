@@ -1,5 +1,5 @@
 function fetchProducts() {
-    fetch("http://localhost:5259/api/product").then((res) => {
+    fetch("https://ecommerce-api20251105080905-b7c5d8gbazahhhdw.canadacentral-01.azurewebsites.net/api/product").then((res) => {
         if(!res.ok) {
             throw new Error(`HTTP ERROR: ${res.status}`);
         }

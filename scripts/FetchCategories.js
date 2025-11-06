@@ -5,7 +5,7 @@ const categoryDropdown = document.getElementById("category-dropdown");
 
 
 function filterProducts(categoryId) {
-    fetch(`http://localhost:5259/api/product?categoryId=${categoryId}`)
+    fetch(`https://ecommerce-api20251105080905-b7c5d8gbazahhhdw.canadacentral-01.azurewebsites.net/api/product?categoryId=${categoryId}`)
     .then(res => res.json())
     .then(data => {
         displayProducts(data);

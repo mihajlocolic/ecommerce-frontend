@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Wireless Bluetooth Headphones",
+    "categoryId": 1,
+    "category": "Electronics",
+    "price": 79.99,
+    "stock": 45,
+    "description": "High-quality wireless headphones with noise cancellation and 20-hour battery life"
+  },
+  {
+    "name": "4K Webcam",
+    "categoryId": 1,
+    "category": "Electronics",
+    "price": 129.99,
+    "stock": 32,
+    "description": "Professional 4K webcam with auto-focus and built-in microphone"
+  },
+  {
+    "name": "Cotton T-Shirt",
+    "categoryId": 2,
+    "category": "Fashion",
+    "price": 24.99,
+    "stock": 120,
+    "description": "100% organic cotton comfortable everyday t-shirt available in multiple colors"
+  },
+  {
+    "name": "Denim Jeans",
+    "categoryId": 2,
+    "category": "Fashion",
+    "price": 59.99,
+    "stock": 87,
+    "description": "Classic blue denim jeans with a modern fit and stretch material"
+  },
+  {
+    "name": "Non-Stick Cookware Set",
+    "categoryId": 3,
+    "category": "Home & Kitchen",
+    "price": 89.99,
+    "stock": 28,
+    "description": "10-piece non-stick cookware set with ergonomic handles and glass lids"
+  },
+  {
+    "name": "Stainless Steel Coffee Maker",
+    "categoryId": 3,
+    "category": "Home & Kitchen",
+    "price": 49.99,
+    "stock": 54,
+    "description": "Programmable coffee maker with thermal carafe, brews up to 12 cups"
+  },
+  {
+    "name": "Facial Moisturizer SPF 30",
+    "categoryId": 4,
+    "category": "Beauty & Personal Care",
+    "price": 34.99,
+    "stock": 96,
+    "description": "Lightweight daily moisturizer with SPF 30 protection for all skin types"
+  },
+  {
+    "name": "Shampoo & Conditioner Bundle",
+    "categoryId": 4,
+    "category": "Beauty & Personal Care",
+    "price": 19.99,
+    "stock": 142,
+    "description": "Sulfate-free natural shampoo and conditioner set for healthy hair"
+  },
+  {
+    "name": "Mountain Bike",
+    "categoryId": 5,
+    "category": "Sports & Outdoors",
+    "price": 399.99,
+    "stock": 15,
+    "description": "Full suspension 21-speed mountain bike with disc brakes"
+  },
+  {
+    "name": "Camping Tent",
+    "categoryId": 5,
+    "category": "Sports & Outdoors",
+    "price": 149.99,
+    "stock": 38,
+    "description": "4-person waterproof camping tent with easy setup and ventilation windows"
+  },
+  {
+    "name": "The Great Gatsby",
+    "categoryId": 6,
+    "category": "Books",
+    "price": 14.99,
+    "stock": 67,
+    "description": "Classic literary novel by F. Scott Fitzgerald"
+  },
+  {
+    "name": "Python Programming Guide",
+    "categoryId": 6,
+    "category": "Books",
+    "price": 39.99,
+    "stock": 43,
+    "description": "Comprehensive guide to learning Python programming from basics to advanced"
+  },
+  {
+    "name": "Board Game Collection",
+    "categoryId": 7,
+    "category": "Toys & Games",
+    "price": 49.99,
+    "stock": 52,
+    "description": "Set of 5 classic board games for family entertainment"
+  },
+  {
+    "name": "Building Blocks Set",
+    "categoryId": 7,
+    "category": "Toys & Games",
+    "price": 29.99,
+    "stock": 84,
+    "description": "1000-piece building block set for creative construction and learning"
+  },
+  {
+    "name": "Car Air Freshener",
+    "categoryId": 8,
+    "category": "Automotive",
+    "price": 9.99,
+    "stock": 200,
+    "description": "Long-lasting car air freshener with refreshing citrus scent"
+  },
+  {
+    "name": "Car Floor Mats",
+    "categoryId": 8,
+    "category": "Automotive",
+    "price": 29.99,
+    "stock": 76,
+    "description": "Premium rubber floor mats for all-weather protection"
+  },
+  {
+    "name": "Vitamin D Supplements",
+    "categoryId": 9,
+    "category": "Health & Wellness",
+    "price": 12.99,
+    "stock": 158,
+    "description": "High-potency Vitamin D3 supplements with 60 capsules per bottle"
+  },
+  {
+    "name": "Yoga Mat",
+    "categoryId": 9,
+    "category": "Health & Wellness",
+    "price": 24.99,
+    "stock": 91,
+    "description": "Non-slip eco-friendly yoga mat with carrying strap"
+  },
+  {
+    "name": "Organic Almonds",
+    "categoryId": 10,
+    "category": "Groceries",
+    "price": 16.99,
+    "stock": 112,
+    "description": "Raw organic almonds, 1 lb bag, rich in protein and healthy fats"
+  },
+  {
+    "name": "Extra Virgin Olive Oil",
+    "categoryId": 10,
+    "category": "Groceries",
+    "price": 13.99,
+    "stock": 88,
+    "description": "Cold-pressed extra virgin olive oil, 500ml bottle"
+  }
+]
